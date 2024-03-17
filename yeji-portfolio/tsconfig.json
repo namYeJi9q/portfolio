@@ -28,7 +28,8 @@
         "**/*.tsx",
         ".next/types/**/*.ts",
         "src/app/aboutme",
-        "src/app/Provider.jsx"
+        "next.config.mjs",
+        "src/app/Provider.tsx"
     ],
     "exclude": ["node_modules"]
 }

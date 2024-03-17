@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ThemeProviders from "./provider";
 import Footer from "./_components/Footer";
 import Header from "./_components/Header";
 
@@ -17,11 +18,14 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
+        <html lang="en" suppressHydrationWarning>
             <body className={inter.className}>
-                <Header />
-                <div>{children}</div>
-                <Footer />
+                <ThemeProviders>
+                    <Header />
+                    <div>{children}</div>
+                    <Footer />
+                </ThemeProviders>
+                {/* <ThemeProvider attribute="class">{children}</ThemeProvider> */}
             </body>
         </html>
     );

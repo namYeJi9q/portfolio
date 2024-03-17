@@ -1,8 +1,15 @@
-export default function PageNotFound() {
+import Link from "next/link";
+import { headers } from "next/headers";
+
+export default async function NotFound() {
+    const headersList = headers();
     return (
-        <>
-            <h1>404페이지 입니다.</h1>
-            <p>홈으로</p>
-        </>
+        <div>
+            <h2>Not Found</h2>
+            <p>Could not find requested resource</p>
+            <p>
+                View <Link href="/blog">all posts</Link>
+            </p>
+        </div>
     );
 }

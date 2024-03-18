@@ -20,12 +20,14 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={inter.className}>
-                <ThemeProviders>
-                    <Header />
-                    <div>{children}</div>
-                    <Footer />
-                </ThemeProviders>
-                {/* <ThemeProvider attribute="class">{children}</ThemeProvider> */}
+                <div className="flex flex-col justify-between min-h-screen">
+                    <ThemeProviders>
+                        <Header />
+                        <div>{children}</div>
+                        <Footer />
+                    </ThemeProviders>
+                    {/* <ThemeProvider attribute="class">{children}</ThemeProvider> */}
+                </div>
             </body>
         </html>
     );

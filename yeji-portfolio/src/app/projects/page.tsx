@@ -5,7 +5,7 @@ import ProjectItem from "../_components/projects/projects-item";
 export default function Projects({ projects }: { projects: ReactNode }) {
     return (
         <>
-            <div className="flex flex-col items-center justify-center min-h-screen px-3 mb-10">
+            <div className="flex flex-col items-center justify-center  px-3 mb-10">
                 <Head>
                     <title>빡코딩 포트폴리오</title>
                     <meta name="description" content="오늘도 빡코딩!" />

@@ -1,8 +1,6 @@
 import Head from "next/head";
-import { ReactNode } from "react";
-import ProjectItem from "../_components/projects/projects-item";
 
-export default function Projects({ projects }: { projects: ReactNode }) {
+export default function Projects() {
     return (
         <>
             <div className="flex flex-col items-center justify-center  px-3 mb-10">

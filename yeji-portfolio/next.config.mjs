@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    env: {
+        NOTION_DATABASE_ID: process.env.NOTION_DATABASE_ID,
+        NOTION_KEY: process.env.NOTION_KEY,
+    },
+};
 
 export default nextConfig;

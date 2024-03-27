@@ -27,26 +27,26 @@ export default function AboutMe() {
                                 </h2>
                                 <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
                                 <p className="text-base">
-                                    Raclette knausgaard hella meggs normcore
-                                    williamsburg enamel pin sartorial venmo tbh
-                                    hot chicken gentrify portland.
+                                    앞으로 10년 안에 두각을 나타낼 천재 호소인
+                                    <br />
+                                    프론트앤드 개발자
                                 </p>
                             </div>
                         </div>
                         <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                             <p className="leading-relaxed text-lg mb-4">
-                                Meggings portland fingerstache lyft, post-ironic
-                                fixie man bun banh mi umami everyday carry
-                                hexagon locavore direct trade art party.
-                                Locavore small batch listicle gastropub
-                                farm-to-table lumbersexual salvia messenger bag.
-                                Coloring book flannel truffaut craft beer
-                                drinking vinegar sartorial, disrupt fashion axe
-                                normcore meh butcher. Portland 90&apos;s
-                                scenester vexillologist forage post-ironic
-                                asymmetrical, chartreuse disrupt butcher paleo
-                                intelligentsia pabst before they sold out four
-                                loko. 3 wolf moon brooklyn.
+                                즐길 수 있는 서비스를 내 손으로 만들어
+                                사람들에게 재미와 설렘을 전하고 싶습니다. 개발을
+                                할 때 배우는 과정보다 활용해서 결과를 만들어내는
+                                과정을 더 즐깁니다. 스스로 서비스를 기획해 미니
+                                앱도 만들어보는 중입니다. 모각코 모임에도 매주
+                                참여해 다른 분야의 개발자들과도 교류하고,
+                                인사이트를 얻습니다. 저를 한 마디로 정의하자면
+                                좀 이상한 사람입니다. 모순적이게도 게으르지만 제
+                                주변인은 저를 다 성실하고 부지런한 사람으로
+                                평가하죠. 조용하지만 모임에 적극적으로 참여하며,
+                                질문을 많이 하고, 말도 많습니다. 여러가지 면을
+                                가진 제 성격이 저의 매력이라고 생각합니다.
                             </p>
                         </div>
                     </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutMe() {
     return (
-        <section className="text-gray-600 body-font">
+        <section className="text-gray-500 body-font">
             <div className="container px-5 py-24 mx-auto flex flex-col">
                 <div className="lg:w-4/6 mx-auto">
                     <div className="flex flex-col sm:flex-row mt-10">
@@ -23,13 +23,13 @@ export default function AboutMe() {
                             </div>
                             <div className="flex flex-col items-center text-center justify-center">
                                 <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
-                                    Phoebe Caulfield
+                                    남예지(FE Engineer)
                                 </h2>
                                 <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
                                 <p className="text-base">
                                     앞으로 10년 안에 두각을 나타낼 천재 호소인
                                     <br />
-                                    프론트앤드 개발자
+                                    {"[1년 차]"}
                                 </p>
                             </div>
                         </div>

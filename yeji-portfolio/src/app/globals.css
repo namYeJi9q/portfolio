@@ -7,7 +7,7 @@
 @import "tailwindcss/utilities";
 
 .custom-leading {
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 .bg-primary {

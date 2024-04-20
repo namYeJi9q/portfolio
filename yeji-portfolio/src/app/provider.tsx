@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 const ThemeProviders = ({ children }: { children: ReactNode }) => {
     return (
         <ThemeProvider enableSystem={true} attribute="class">
-            {children}
+            <>{children}</>
         </ThemeProvider>
     );
 };

@@ -4,6 +4,7 @@ import "./globals.css";
 import ThemeProviders from "./provider";
 import Footer from "./_components/Footer";
 import Header from "./_components/Header";
+import "react-notion-x/src/styles.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

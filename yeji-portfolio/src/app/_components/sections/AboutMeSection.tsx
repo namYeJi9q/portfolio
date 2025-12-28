@@ -1,13 +1,27 @@
-import Image from "next/image";
+"use client";
 
-export default function AboutMe() {
+import { motion } from "framer-motion";
+
+export default function AboutMeSection() {
     return (
-        <section className="text-gray-500 body-font">
+        <section className="text-gray-500 body-font min-h-screen flex items-center">
             <div className="container px-5 py-24 mx-auto flex flex-col">
-                <div className="lg:w-4/6 mx-auto">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    transition={{ duration: 0.6 }}
+                    className="lg:w-4/6 mx-auto"
+                >
                     <div className="flex flex-col sm:flex-row mt-10">
-                        <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                            <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                            className="sm:w-1/3 text-center sm:pr-8 sm:py-8"
+                        >
+                            <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-400">
                                 <svg
                                     fill="none"
                                     stroke="currentColor"
@@ -22,7 +36,7 @@ export default function AboutMe() {
                                 </svg>
                             </div>
                             <div className="flex flex-col items-center text-center justify-center">
-                                <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
+                                <h2 className="font-medium title-font mt-4 text-gray-900 dark:text-white text-lg">
                                     남예지(FE Engineer)
                                 </h2>
                                 <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
@@ -32,8 +46,14 @@ export default function AboutMe() {
                                     {"[1년 차]"}
                                 </p>
                             </div>
-                        </div>
-                        <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: 0.4 }}
+                            className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 dark:border-gray-700 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left"
+                        >
                             <p className="leading-relaxed text-lg mb-4">
                                 즐길 수 있는 서비스를 내 손으로 만들어
                                 사람들에게 재미와 설렘을 전하고 싶습니다. 개발을
@@ -48,9 +68,9 @@ export default function AboutMe() {
                                 질문을 많이 하고, 말도 많습니다. 여러가지 면을
                                 가진 제 성격이 저의 매력이라고 생각합니다.
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );
